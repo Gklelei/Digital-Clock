@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: -1;
+  background: #f41b75;
+}
+.container::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  right: -30px;
+  z-index: -1;
+  background: #419aff;
+}
+.clock {
+  backdrop-filter: blur(40px);
+}
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.clock span::after {
+  position: absolute;
+  font-size: 16px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hrs::after {
+  content: "HOURS";
+}
+#mins::after {
+  content: "MINS";
+}
+#sec::after {
+  content: "SECS";
+}

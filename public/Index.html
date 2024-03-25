@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/src/input.css" />
+    <!-- Tail wind css  -->
+    <link rel="stylesheet" href="/public/style.css" />
+    <!-- Font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Js file -->
+    <script src="/public/script.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="hero w-full min-h-screen bg-gradient-to-br from-purple-900 to-indigo-900 text-white relative"
+    >
+      <div
+        class="container w-[800px] h-44 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <div
+          class="clock w-full h-full bg-[rgba(235,0,255,0.11)] flex rounded-xl items-center justify-center"
+        >
+          <span id="hrs">00</span>
+          <span>:</span>
+          <span id="mins">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+bg-[linear-gradient(45deg,#08001f,#30197d) -->
